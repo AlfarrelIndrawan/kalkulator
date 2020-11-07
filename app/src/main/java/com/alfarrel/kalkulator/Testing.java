@@ -7,8 +7,40 @@ public class Testing {
         Scanner in = new Scanner(System.in);
         Kalkulator kal = new Kalkulator();
         String perintah = "";
-        while (!perintah.equals("TAMPILKAN")) {
+        int nilai = 0;
+        while (!perintah.equals("exit")) {
             perintah = in.next();
+            switch (perintah) {
+                case "add":
+                    nilai = in.nextInt();
+                    kal.total =  kal.add(nilai);
+                    System.out.println(kal.total);
+                    break;
+                case "substract":
+                    nilai = in.nextInt();
+                    kal.total = kal.substract(nilai);
+                    System.out.println(kal.total);
+                    break;
+                case "multiply":
+                    nilai = in.nextInt();
+                    kal.total = kal.multiply(nilai);
+                    System.out.println(kal.total);
+                    break;
+                case "divide":
+                    nilai = in.nextInt();
+                    kal.total = kal.divide(nilai);
+                    System.out.println(kal.total);
+                    break;
+                case "cancel":
+                    kal.total = kal.cancel();
+                    System.out.println(kal.total);
+                    break;
+                case "exit":
+                    System.out.println(kal.exit());
+                    break;
+                default:
+                    System.out.println(kal.total);
+            }
         }
 
     }
