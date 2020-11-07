@@ -30,6 +30,12 @@ public class testKalkulator {
         Assert.assertEquals(20, kal.multiply(2));
     }
     @Test
+    public void testDivisionGivenNumberNotZero() {
+        Kalkulator kal = new Kalkulator();
+        kal.total = 10;
+        Assert.assertEquals(5,kal.divide(2));
+    }
+    @Test
     public void testCancel() {
         Kalkulator kal = new Kalkulator();
         kal.total = 0;
