@@ -32,6 +32,9 @@ class Kalkulator {
     int kurang(int nilai) {
         return total -= nilai;
     }
+    int multiply(int nilai) {
+        return total *= nilai;
+    }
     int cancel() {
         return 0;
     }
