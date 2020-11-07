@@ -16,7 +16,9 @@ public class Testing {
 }
 class Kalkulator {
     int total;
-
+    Kalkulator() {
+        this.total = 0;
+    }
     @Override
     public String toString() {
         return String.format("%d", total);
