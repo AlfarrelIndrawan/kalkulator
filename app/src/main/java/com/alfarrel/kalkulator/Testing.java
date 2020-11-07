@@ -6,11 +6,6 @@ public class Testing {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Kalkulator kal = new Kalkulator();
-        kal.total = 10;
-        System.out.println(kal.toString());
-        System.out.println(kal.tambah(5));
-        System.out.println(kal.kurang(5));
-        System.out.println(kal.cancel());
         String perintah = "";
         while (perintah.equals("TAMPILKAN")) {
             perintah = in.next();
@@ -34,6 +29,10 @@ class Kalkulator {
     }
     int multiply(int nilai) {
         return total *= nilai;
+    }
+    int divide(int nilai) {
+        if (nilai == 0) return 0;
+        else return total/nilai;
     }
     int cancel() {
         return 0;
