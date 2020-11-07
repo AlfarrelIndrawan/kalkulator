@@ -7,7 +7,7 @@ public class Testing {
         Scanner in = new Scanner(System.in);
         Kalkulator kal = new Kalkulator();
         String perintah = "";
-        int nilai = 0;
+        int nilai;
         while (!perintah.equals("exit")) {
             perintah = in.next();
             switch (perintah) {
@@ -36,16 +36,14 @@ public class Testing {
                     System.out.println(kal.total);
                     break;
                 case "exit":
-                    System.out.println(kal.exit());
                     break;
                 default:
                     System.out.println(kal.total);
             }
         }
-
     }
-
 }
+
 class Kalkulator {
     int total;
     Kalkulator() {
@@ -70,8 +68,5 @@ class Kalkulator {
     }
     int cancel() {
         return 0;
-    }
-    String exit() {
-        return ""+total;
     }
 }
