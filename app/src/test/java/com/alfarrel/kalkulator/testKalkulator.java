@@ -47,4 +47,10 @@ public class testKalkulator {
         kal.total = 0;
         Assert.assertEquals(0,kal.cancel());
     }
+    @Test
+    public void testExit() {
+        Kalkulator kal = new Kalkulator();
+        kal.total = 0;
+        Assert.assertEquals(0,kal.exit());
+    }
 }
