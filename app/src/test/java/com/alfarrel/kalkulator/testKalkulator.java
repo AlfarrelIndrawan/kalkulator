@@ -15,13 +15,13 @@ public class testKalkulator {
     public void testTambah() {
         Kalkulator kal = new Kalkulator();
         kal.total = 10;
-        Assert.assertEquals(15,kal.tambah(5));
+        Assert.assertEquals(15,kal.add(5));
     }
     @Test
-    public void testKurang() {
+    public void testSubstract() {
         Kalkulator kal = new Kalkulator();
         kal.total = 10;
-        Assert.assertEquals(5, kal.kurang(5));
+        Assert.assertEquals(5, kal.substract(5));
     }
     @Test
     public void testMultiply() {

@@ -7,7 +7,7 @@ public class Testing {
         Scanner in = new Scanner(System.in);
         Kalkulator kal = new Kalkulator();
         String perintah = "";
-        while (perintah.equals("TAMPILKAN")) {
+        while (!perintah.equals("TAMPILKAN")) {
             perintah = in.next();
         }
 
@@ -23,10 +23,10 @@ class Kalkulator {
     public String toString() {
         return String.format("%d", total);
     }
-    int tambah(int nilai) {
+    int add(int nilai) {
        return total += nilai;
     }
-    int kurang(int nilai) {
+    int substract(int nilai) {
         return total -= nilai;
     }
     int multiply(int nilai) {
