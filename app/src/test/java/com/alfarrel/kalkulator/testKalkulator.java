@@ -17,4 +17,10 @@ public class testKalkulator {
         kal.total = 10;
         Assert.assertEquals(15,kal.tambah(5));
     }
+    @Test
+    public void testKurang() {
+        Kalkulator kal = new Kalkulator();
+        kal.total = 10;
+        Assert.assertEquals(5, kal.kurang(5));
+    }
 }
