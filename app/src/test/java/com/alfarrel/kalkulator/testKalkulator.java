@@ -36,6 +36,12 @@ public class testKalkulator {
         Assert.assertEquals(5,kal.divide(2));
     }
     @Test
+    public void testDivisionGivenNumberZero() {
+        Kalkulator kal = new Kalkulator();
+        kal.total = 10;
+        Assert.assertEquals(0,kal.divide(0));
+    }
+    @Test
     public void testCancel() {
         Kalkulator kal = new Kalkulator();
         kal.total = 0;
