@@ -51,6 +51,6 @@ public class testKalkulator {
     public void testExit() {
         Kalkulator kal = new Kalkulator();
         kal.total = 0;
-        Assert.assertEquals(0,kal.exit());
+        Assert.assertEquals("0",kal.exit());
     }
 }
