@@ -23,4 +23,10 @@ public class testKalkulator {
         kal.total = 10;
         Assert.assertEquals(5, kal.kurang(5));
     }
+    @Test
+    public void testCancel() {
+        Kalkulator kal = new Kalkulator();
+        kal.total = 0;
+        Assert.assertEquals(0,kal.cancel());
+    }
 }
