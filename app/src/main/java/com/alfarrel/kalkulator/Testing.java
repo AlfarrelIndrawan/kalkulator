@@ -37,5 +37,7 @@ class Kalkulator {
     int cancel() {
         return 0;
     }
-
+    String exit() {
+        return ""+total;
+    }
 }
