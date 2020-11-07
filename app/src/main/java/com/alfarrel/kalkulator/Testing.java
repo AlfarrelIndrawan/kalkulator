@@ -9,6 +9,7 @@ public class Testing {
         kal.total = 10;
         System.out.println(kal.toString());
         System.out.println(kal.tambah(5));
+        System.out.println(kal.kurang(5));
         String perintah = "";
         while (perintah.equals("TAMPILKAN")) {
             perintah = in.next();
@@ -27,5 +28,7 @@ class Kalkulator {
     int tambah(int nilai) {
        return total += nilai;
     }
-
+    int kurang(int nilai) {
+        return total -= nilai;
+    }
 }
