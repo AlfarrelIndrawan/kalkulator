@@ -9,6 +9,9 @@ public class Testing {
         kal.total = 10;
         System.out.println(kal.toString());
         String perintah = "";
+        while (perintah.equals("TAMPILKAN")) {
+            perintah = in.next();
+        }
 
     }
 
@@ -19,5 +22,8 @@ class Kalkulator {
     @Override
     public String toString() {
         return String.format("%d", total);
+    }
+    int tambah(int nilai) {
+       return total += nilai;
     }
 }

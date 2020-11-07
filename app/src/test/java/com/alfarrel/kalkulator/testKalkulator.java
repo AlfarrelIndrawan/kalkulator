@@ -5,14 +5,16 @@ import org.junit.Test;
 
 public class testKalkulator {
     @Test
-    void testToString() {
+    public void testToString() {
         Kalkulator kal = new Kalkulator();
         String test = "10";
         kal.total = 10;
         Assert.assertEquals(test, kal.toString());
     }
     @Test
-    void testTambah() {
+    public void testTambah() {
         Kalkulator kal = new Kalkulator();
+        kal.total = 10;
+        Assert.assertEquals(15,kal.tambah(5));
     }
 }
