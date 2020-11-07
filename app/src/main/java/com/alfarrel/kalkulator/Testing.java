@@ -10,6 +10,7 @@ public class Testing {
         System.out.println(kal.toString());
         System.out.println(kal.tambah(5));
         System.out.println(kal.kurang(5));
+        System.out.println(kal.cancel());
         String perintah = "";
         while (perintah.equals("TAMPILKAN")) {
             perintah = in.next();
@@ -30,5 +31,8 @@ class Kalkulator {
     }
     int kurang(int nilai) {
         return total -= nilai;
+    }
+    int cancel() {
+        return 0;
     }
 }
