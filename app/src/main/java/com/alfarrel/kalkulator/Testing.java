@@ -13,7 +13,7 @@ public class Testing {
             switch (perintah) {
                 case "add":
                     nilai = in.nextInt();
-                    kal.total =  kal.add(nilai);
+                    kal.total = kal.add(nilai);
                     System.out.println(kal.total);
                     break;
                 case "substract":
